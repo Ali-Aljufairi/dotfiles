@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-sudo apt update -y && sudo apt upgrade -y && sudo apt install -y git curl bat fzf gcc make ruby
+sudo apt update -y && sudo apt upgrade -y && sudo apt install -y git curl bat fzf gcc make ruby-full
 
 sudo gem install colorls
 
@@ -12,6 +12,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 cp ~/dotfiles/config/.p10k.zsh ~
 
-cat ~/dotfiles/config/.zshrc/start.zshrc >~/.zshrc
-echo "export ZSH=\"/home/$USER/.oh-my-zsh\"" >>~/.zshrc
-cat ~/dotfiles/config/.zshrc/end.zshrc >>~/.zshrc
+cat ~/dotfiles/config/.zshrc/start.zshrc > ~/.zshrc
+echo "export ZSH=\"/home/$USER/.oh-my-zsh\"" >> ~/.zshrc
+cat ~/dotfiles/config/.zshrc/end.zshrc >> ~/.zshrc
+
