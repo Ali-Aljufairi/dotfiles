@@ -1,4 +1,3 @@
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -126,11 +125,14 @@ alias zshconfig="$EDITOR ~/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 
 alias bat="batcat"
-alias ls="colorls"
-alias la="colorls -al"
-alias lc='colorls -lA --sd'
+alias lsa="\ls -al"
+alias lc="colorls"
+alias lca="colorls -la"
+alias la="colorls -al --sd"
 alias lx='exa'
 alias lxa='exa -al'
+alias lxT='exa -T'
+alias lxaT='exa -alT'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
