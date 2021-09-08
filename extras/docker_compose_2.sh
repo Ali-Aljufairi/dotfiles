@@ -2,7 +2,9 @@
 
 sudo apt update -y && sudo apt install -y jq
 
-TAG=$(jq -r "map(select(.prerelease)) | first | .tag_name" <<<$(curl --silent https://api.github.com/repos/docker/compose/releases))
+API=https://api.github.com/repos/docker/compose/releases
+
+TAG=$(jq -r "map(select(.prerelease)) | first | .tag_name" <<<$(curl -S $API))
 ARCH=$(dpkg --print-architecture)
 
 mkdir -p ~/.docker/cli-plugins/
