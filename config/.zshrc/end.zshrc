@@ -76,7 +76,6 @@ plugins=(
   ruby
   ubuntu
   pylint
-  django
   docker
   github
   python
