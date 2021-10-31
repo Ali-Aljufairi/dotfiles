@@ -84,7 +84,6 @@ plugins=(
   flutter
   composer
   autopep8
-  zsh_reload
   react-native
   zsh-interactive-cd
   zsh-autosuggestions
